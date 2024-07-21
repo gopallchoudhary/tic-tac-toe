@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #219c90;
+}
+
+main {
+  text-align: center;
+}
+
+.title {
+  margin-top: 20px;
+  color: #ee9322;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1.5vmin;
+  border: none;
+  font-size: 8vmin;
+  color: ;
+  background-color: #f8ffd2;
+}
+
+.reset-btn {
+  padding: 15px;
+  background-color: #ee9322;
+  border: none;
+  border-radius: 8px;
+
+}
+
+.reset-btn:hover {
+  cursor: pointer;
+}
+
+#new-btn {
+  padding: 15px;
+  background-color: #ee9322;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+#new-btn:hover {
+  cursor: pointer;
+}
+
+#msg {
+  color: #f8ffd2;
+  font-size: 9vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.box:hover {
+  box-shadow: 0 0 35px #f58a06;
+  height: 21vmin;
+  width: 21vmin;
+  transition: all 0.1s cubic-bezier(1, 0, 0, 1);
+
+}
+
+.box::before {
+
+  position: absolute;
+  inset: 2px;
+
+}
